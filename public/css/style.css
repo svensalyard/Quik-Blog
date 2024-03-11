@@ -1,1 +1,114 @@
-/* style me */
+:root {
+    --light: #E4FD9C;
+    --dark: #411900;
+    --grey: grey;
+    --white: white;
+}
+
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+
+body {
+    background-color: var(--light) !important;
+    color: var(--light) !important;
+    justify-content: center !important;
+    align-self: center !important;
+    overflow: hidden;
+}
+
+.center {
+    display: grid !important;
+    justify-content: center !important;
+    align-self: center !important;
+    align-items: center !important;
+}
+
+header {
+    height: fit-content !important;
+}
+
+.navbar {
+    background-color: var(--dark) !important;
+    height: 170px !important;
+}
+
+.below {
+    font-weight: 900 !important;
+    font-size: 45px !important;
+    box-shadow: 7px 6px var(--grey) !important;
+    background-color: var(--light) !important;
+    border-radius: 5px;
+    padding: 10px !important;
+    width: 70px !important;
+    height: 20px !important;
+}
+
+.margin {
+    margin-left: 40px !important;
+}
+
+.nav-item {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+
+}
+
+.margin-left {
+    margin-left: 60px !important;
+}
+
+.dark-text {
+    color: var(--dark) !important;
+}
+
+.light-text {
+    color: var(--light) !important;
+}
+
+.loginpage {
+    border-radius: 5px !important;
+    border-style: solid !important;
+    border-color: var(--dark) !important;
+    box-sizing: border-box !important;
+    margin: 50px;
+    padding: 20px;    
+    border-width: 5px;
+}
+
+.align1 {
+    align-items: center !important;
+}
+
+.login-subtext {
+    color: var(--dark);
+}
+
+.login-subheader {
+    border-style: solid !important;
+    border-color: var(--dark) !important;
+    box-sizing: border-box !important;
+    background-color: var(--dark);
+    border-radius: 5px !important;
+    height: fit-content !important;
+    width: fit-content !important;
+}
+
+.background-dark {
+    background-color:var(--dark);
+}
+
+.background-light {
+    background-color: var(--light);
+}
+
+.space {
+    margin: 8px;
+    padding: 5px;
+}
+
+footer {
+
+    background-color: var(--dark);
+    color: var(--light);
+}
