@@ -1,0 +1,41 @@
+<nav class='navstyle navbar navbar-expand-lg bg-body-tertiary'>
+  <div class='container-fluid'>
+    <button
+      class='navbar-toggler'
+      type='button'
+      data-bs-toggle='collapse'
+      data-bs-target='#navbarSupportedContent'
+      aria-controls='navbarSupportedContent'
+      aria-expanded='false'
+      aria-label='Toggle navigation'
+    >
+      <span class='navbar-toggler-icon'></span>
+    </button>
+		<div class="row">
+    <div class='col-12 collapse navbar-collapse' id='navbarSupportedContent'>
+      <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
+        <li class='margin nav-item'>
+          <h4><a class='light-text nav-link active' aria-current='page' href='/'>Home</a></h4>
+        </li>
+        <li class='nav-item'>
+          <h4><a class='light-text nav-link' href='/controlpanel'>Dashboard</a></h4>
+        </li>
+        <li class='nav-item'>
+          {{#if logged_in}}
+            <h4><button class='light-text no-button nav-link' id='logout'>Logout</button></h4>
+          {{else}}
+            <h4><a class='light-text nav-link' href='/login'>Login</a></h4>
+          {{/if}}
+        </li>
+      </ul>
+    </div>
+		<div class="col-12 margin-left">
+      {{#if controlpanel}}
+      <a class='dark-text col-12 navbar-brand below' href='/controlpanel'>Your Dashboard</a>
+      {{else}}
+			<a class='dark-text col-12 navbar-brand below' href='/'>The Tech Blog</a>
+      {{/if}}
+		</div>
+		</div>
+  </div>
+</nav>
