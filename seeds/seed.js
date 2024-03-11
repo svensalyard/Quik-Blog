@@ -1,12 +1,12 @@
 const sequelize = require('../config/connection');
-const { User } = require('../models');
+const { User, post } = require('../models');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
- /** 
-  * DO SEEDS HERE
-  */
+const allUsers = await User.bulkCreate(userSeed);
+
+for (const posts of postSeed) {await post.create({...allPosts})}
 
   process.exit(0);
 };
