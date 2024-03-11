@@ -13,7 +13,8 @@ A quik social site to post whatever you feel like.
 
 ### Useage
 
-Simply go to the live page [Quik Blog](). Sign up to create an account.
+Simply go to the live page [Quik Blog](https://quik-blog-3bf2d544792d.herokuapp.com/). Sign up to create an account.
+![alt text](./assets/quikblog.png)
 
 ### License
 
